@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dip"
+    android:background="@drawable/myshape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hello_world_text_view"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="4dip"
+        android:text="Static Text" >
+    </TextView>
+
+    <Button
+        android:id="@+id/cudlik"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Zmackni me!"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="@dimen/widget_margin">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:text="mock text" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:text="cudlik" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</FrameLayout>-->

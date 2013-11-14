@@ -1,0 +1,12 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="300dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="86400000"
+    android:initialLayout="@layout/widget_layout"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen|keyguard">
+    <!--
+    android:configure="com.stibi.android.unixfortunewidget.WidgetConfiguration"
+    android:initialKeyguardLayout="@layout/example_keyguard"
+    android:previewImage="@drawable/preview">-->
+</appwidget-provider>
