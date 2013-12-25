@@ -1,15 +1,10 @@
 package com.stibi.android.unixfortunewidget;
 
-import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.util.Log;
-import android.widget.Button;
-import android.widget.RemoteViews;
 
 public class UnixFortuneWidgetProvider extends AppWidgetProvider {
 
@@ -27,7 +22,7 @@ public class UnixFortuneWidgetProvider extends AppWidgetProvider {
 //        for (int i = 0; i < N; i++) {
 //            int appWidgetId = appWidgetIds[i];
 //
-//            Intent intent = new Intent(context, HelloWorldActivity.class);
+//            Intent intent = new Intent(context, MainActivity.class);
 //            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 //
 //            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_layout);

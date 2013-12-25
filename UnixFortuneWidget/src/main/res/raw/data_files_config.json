@@ -1,0 +1,12 @@
+[
+    {
+        "name": "RedDwarf fortunky",
+        "description": "Fortunky z cerveneho trpaslika",
+        "url": "http://trmkd"
+    },
+    {
+        "name": "foo fortunky",
+        "description": "Foo fortunky jsou lepsi nez bar fortunky",
+        "url": "http://url.na.foo.fortunky"
+    }
+]

@@ -1,26 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical" >-->
+
+    <!--<Button-->
+        <!--android:id="@+id/add"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="add new item" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/remove"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="remove current item" />-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dip"-->
+        <!--android:layout_weight="1" />-->
+
+<!--</LinearLayout>-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".HelloWorldActivity$PlaceholderFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <!--<Button-->
+        <!--android:id="@+id/add"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="add new item" />-->
 
-    <Button
-        android:id="@+id/sluzba_buttonek"
+    <!--<Button-->
+        <!--android:id="@+id/remove"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="remove current item" />-->
+
+    <com.stibi.android.unixfortunewidget.PagerContainer
+        android:id="@+id/pager_container"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Spustit sluzbu"
+        android:background="#CCC"
+        android:layout_gravity="center_vertical"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="false">
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+        <com.stibi.android.unixfortunewidget.FortunesViewPager
+            android:id="@+id/pager"
+            android:layout_width="280dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </com.stibi.android.unixfortunewidget.PagerContainer>
+
 
 </RelativeLayout>
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--tools:context=".HelloWorldActivity$PlaceholderFragment">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:text="@string/hello_world"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/sluzba_buttonek"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:text="Spustit sluzbu"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_alignParentLeft="true" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/dej_fortunku"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Dej mi fortunku!"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:onClick="giveMeRandomFortune" />-->
+
+    <!--<Button-->
+        <!--android:layout_below="@+id/sluzba_buttonek"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Fortune DB"-->
+        <!--android:id="@+id/fortune_db"-->
+        <!--android:onClick="showFortuneDb"-->
+        <!--android:layout_alignParentLeft="true" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/importButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Import"-->
+        <!--android:layout_below="@+id/dej_fortunku"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:onClick="importFortunesActivity" />-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/random_fortune_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/fortune_db">-->
+        <!---->
+        <!--<TextView-->
+            <!--android:id="@+id/info"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!---->
+        <!--<ImageView-->
+            <!--android:id="@+id/fling_object"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:src="@android:drawable/btn_star"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/randomFortuneView"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:onClick="randomFortuneTextViewClicked"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="gone" />-->
+    <!--</FrameLayout>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Gestures"-->
+        <!--android:id="@+id/gesturesButton"-->
+        <!--android:layout_below="@+id/dej_fortunku"-->
+        <!--android:layout_toLeftOf="@+id/importButton"-->
+        <!--android:onClick="gesturesDemoActivity" />-->
+
+<!--</RelativeLayout>-->
